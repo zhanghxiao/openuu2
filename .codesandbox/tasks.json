@@ -1,0 +1,10 @@
+{
+  "setupTasks": [],
+  "tasks": {
+    "run-container": {
+      "name": "Run Docker Container",
+      "command": "docker run -d -p 7878:7878 --name openui-container -e OPENAI_API_KEY -e OPENAI_BASE_URL -e CLOUDFLARE_TUNNEL_TOKEN ghcr.io/wandb/openui /start.sh",
+      "runAtStart": true
+    }
+  }
+}
